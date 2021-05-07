@@ -12,17 +12,17 @@ class BitSet {
        int ctr[n];
 
   public:
-    BitSet();
-    void set (size_t);
-    void reset (size_t);
-    void flip (size_t);
-    int test (size_t);
-	size_t getSize();
+      BitSet();
+      void set (size_t);
+      void reset (size_t);
+      void flip (size_t);
+      int test (size_t);
+      size_t getSize();
   public:
-	BitSet<n>& operator& (const BitSet<n>& rhs);
-	BitSet<n>& operator| (const BitSet<n>& rhs);
-  	void operator&= (const BitSet<n>& rhs);
-  	void operator|= (const BitSet<n>& rhs);
+      BitSet<n>& operator& (const BitSet<n>& rhs);
+      BitSet<n>& operator| (const BitSet<n>& rhs);
+      void operator&= (const BitSet<n>& rhs);
+      void operator|= (const BitSet<n>& rhs);
 
 };
 
