@@ -4,21 +4,21 @@ using std::swap;
 
 class GapBuffer {
   private:
-    char* start_ptr;
-    char* cursor_ptr;
-    char* gap_end_ptr;
-    char* end_ptr;
-    std::size_t capacity;
+      char* start_ptr;
+      char* cursor_ptr;
+      char* gap_end_ptr;
+      char* end_ptr;
+      std::size_t capacity;
 
-    void updateCapacity();
+      void updateCapacity();
   public:
       GapBuffer(std::size_t);
-	 ~GapBuffer();
+      ~GapBuffer();
       GapBuffer(const GapBuffer&);
-	  GapBuffer& operator= (GapBuffer&);
+      GapBuffer& operator= (GapBuffer&);
     
-	friend
-	  void swap(GapBuffer&, GapBuffer&);
+      friend
+      void swap(GapBuffer&, GapBuffer&);
       void insert(char);
       void removeLastChar();
       void moveCursor(std::ptrdiff_t);
